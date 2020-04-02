@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>example 4 - 함수</title>
+    </head>
+    <body>
+      <input type="number" name="" id="num">
+      <button id="btn">확인</button>
+    </body>
+    <script>
+window.onload = function(){
+  document.getElementById("btn").addEventListener("click", function(){
+    let num = document.getElementById("num").value;
+    alert(factorial(num));
+  });
+}
+const factorial = function(num){
+  return num * factorial(num-1);
+};
+    </script>
+</html>

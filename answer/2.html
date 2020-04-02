@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>example 2 - 조건문</title>
+    </head>
+    <body>
+        나이를 입력해주세요.
+        <input type="number" name="" id="userYears">
+        <button id="btn">확인</button>
+    </body>
+    <script>
+        document.getElementById("btn").addEventListener("click", function(){
+            let years = document.getElementById("userYears").value;
+            // 1. 19세 이상일 경우 : "19세 이상입니다!"라는 알림이 뜬다.
+            // 2. 19세 미만일 경우 : "19세 미만입니다!"라는 알림이 뜬다.
+        });
+    </script>
+</html>
